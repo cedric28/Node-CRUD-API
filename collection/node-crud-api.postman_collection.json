@@ -1,0 +1,139 @@
+{
+	"info": {
+		"_postman_id": "a9f9e7d0-c470-43e9-9688-dc71f1e39bf3",
+		"name": "node-crud-api",
+		"description": "node crud api for blog post",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "create blog",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"title\" : \"Title 1\",\r\n    \"content\" : \"Content 1\",\r\n    \"author\" : \"Author 1\",\r\n    \"image\" : \"Image 1\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/blogs",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"blogs"
+					]
+				},
+				"description": "end point for creating blog"
+			},
+			"response": []
+		},
+		{
+			"name": "get blog",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/api/blogs",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"blogs"
+					]
+				},
+				"description": "get all blog post"
+			},
+			"response": []
+		},
+		{
+			"name": "search blog",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"search\" : \"sam\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/blogs/find",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"blogs",
+						"find"
+					]
+				},
+				"description": "search blog"
+			},
+			"response": []
+		},
+		{
+			"name": "edit blog",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"url": {
+					"raw": ""
+				},
+				"description": "function to edit blog"
+			},
+			"response": []
+		},
+		{
+			"name": "show blog",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": ""
+				},
+				"description": "function to show blog"
+			},
+			"response": []
+		},
+		{
+			"name": "delete blog",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/api/blogs/5f493d946e6ebc59a475ee37",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"blogs",
+						"5f493d946e6ebc59a475ee37"
+					]
+				},
+				"description": "function to delete blog"
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
